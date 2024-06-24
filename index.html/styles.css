@@ -1,0 +1,259 @@
+/* Estilos gerais */
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #10151b;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: #181e25;
+    padding: 20px;
+    border-bottom: 5px solid #005982;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px; /* Definindo largura máxima para o conteúdo principal */
+    padding: 20px;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+.container1, .container2, .classes {
+    background-color: #181e25;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+.info-header {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+}
+
+.title-logo .small-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.info-header h1 {
+    color: #00b1d3;
+    font-size: 39.8px;
+}
+
+.info-header p {
+    font-size: 19.2px;
+    margin: 10px 0;
+}
+
+.info-header .date-time {
+    font-size: 23px;
+    color: #a5a5a5;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #00a8dd;
+    color: #fff;
+    border: 2px solid #004e69;
+    padding: 15px 25px;
+    font-size: 19.2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005982;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os itens se ajustem em várias linhas */
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+.class {
+    background-color: #2b323c;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%; /* Ajustando a largura para ocupar 45% do espaço disponível */
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre as caixas */
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+.class img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.class h2 {
+    color: #00b1d3;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.class ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os itens se ajustem em várias linhas */
+    gap: 20px;
+    box-sizing: border-box; /* Garantindo que o gap não aumente a largura */
+}
+
+.instructor-info, .course-info {
+    background-color: #2b323c;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+.instructor-info {
+    text-align: center;
+}
+
+.instructor-info img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.instructor-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.instructor-info p:first-of-type {
+    font-size: 19.2px;
+    color: #00b1d3;
+}
+
+.course-info h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.course-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.course-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.course-info ul li img {
+    max-width: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #2b323c;
+    width: 100%;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+}
+
+footer a {
+    color: #00a8dd;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .footer-logo {
+    max-width: 50px;
+    margin-left: 10px;
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 1024px) {
+    main {
+        padding: 10px;
+    }
+
+    .container1, .container2 {
+        padding: 15px;
+    }
+
+    .class {
+        width: 100%; /* Alterando a largura para ocupar 100% do espaço em dispositivos menores */
+    }
+
+    .container2 {
+        flex-direction: column; /* Empilhando os containers verticalmente em dispositivos menores */
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        max-width: 120px; /* Reduzindo o tamanho do logo no cabeçalho para telas menores */
+    }
+
+    .class {
+        padding: 15px; /* Reduzindo o padding das classes para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px; /* Reduzindo o padding do cabeçalho para telas muito pequenas */
+    }
+
+    header .logo {
+        max-width: 100px; /* Ajustando o tamanho do logo ainda mais para telas muito pequenas */
+    }
+
+    .class {
+        padding: 15px; /* Reduzindo o padding das classes para telas muito pequenas */
+    }
+}
